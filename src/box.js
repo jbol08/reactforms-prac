@@ -1,7 +1,25 @@
-const Box = (props) => {
+import React from 'react';
+
+function Box ({
+    id,
+    removeBox,
+    backgroundColor = 'green',
+    height = 10,
+    width = 10
+})
+{
+    const remove = () => removeBox(id);
     return (
-        <div background-color={props.color} height={props.height} width={props.width}></div>
+        <div>
+            <div style={{
+                backgroundColor,
+                height: `${height}em`,
+                width: `${width}em`,
+            }}>
+            </div>
+            <button onClick={remove}>Remove Box </button>
+        </div>
     )
-}
+};
 
 export default Box;
