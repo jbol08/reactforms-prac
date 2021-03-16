@@ -26,7 +26,7 @@ const NewBoxForm = ({makeBox}) => {
         <div>
             <form onSubmit={getValues}>
                 <div>
-                    <label htmlFor='backgroundColor'>Background Color:</label>
+                    <label htmlFor='backgroundColor'>Background Color</label>
                     <input onChange={handleChange}
                         name='backgroundColor'
                         type='text'
@@ -34,7 +34,7 @@ const NewBoxForm = ({makeBox}) => {
                         id='backgroundColor' />
                 </div>
                 <div>
-                    <label htmlFor='height'>Height:</label>
+                <label htmlFor="height">Height</label>
                     <input onChange={handleChange}
                         name='height'
                         type='text'
@@ -42,14 +42,14 @@ const NewBoxForm = ({makeBox}) => {
                         id='height' />
                 </div>
                 <div>
-                    <label htmlFor='width'>Width:</label>
+                    <label htmlFor="width">Width</label>
                     <input onChange={handleChange}
                         name='width'
                         type='text'
                         value={formData.width}
                         id='width' />
                 </div>
-                <button> Add a New Box</button>
+                <button id='addBox'> Add a New Box</button>
             </form>
         </div>
     );

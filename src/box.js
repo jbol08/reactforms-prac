@@ -2,13 +2,13 @@ import React from 'react';
 
 function Box ({
     id,
-    removeBox,
+    handleRemove,
     backgroundColor = 'green',
     height = 10,
     width = 10
 })
 {
-    const remove = () => removeBox(id);
+    const removeBox = () => handleRemove(id);
     return (
         <div>
             <div style={{
@@ -17,7 +17,7 @@ function Box ({
                 width: `${width}em`,
             }}>
             </div>
-            <button onClick={remove}>Remove Box </button>
+            <button onClick={removeBox} id='removeBox'>Remove Box </button>
         </div>
     )
 };

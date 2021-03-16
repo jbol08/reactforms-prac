@@ -16,9 +16,9 @@ const BoxList = () => {
             key={box.id}
             id={box.id}
             backgroundColor={box.backgroundColor}
-            height={box.height}
+            Height={box.Height}
             width={box.width}
-            removeBox={removeBox}
+            handleRemove={removeBox}
     />));
     
     
