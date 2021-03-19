@@ -8,14 +8,7 @@ const TodoList = () => {
         setTodos(todos => [...todos, newToDo])
     };
 
-    // const update = (id, updatedTask) => {
-    //     setTodos(todos =>
-    //       todos.map(todo =>
-    //         todo.id === id ? { ...todo, task: updatedTask } : todo
-    //       )
-    //     );
-    // };
-    
+       
     const remove = id => {
         setTodos(todos => todos.filter(todo => todo.id !== id));
       };
